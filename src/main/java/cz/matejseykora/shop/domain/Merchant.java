@@ -11,11 +11,12 @@ import org.springframework.lang.Nullable;
 @EqualsAndHashCode
 public class Merchant {
     @Nullable
+    @Setter(AccessLevel.NONE)
     private Integer id;
     @NonNull
     private String name;
     @NonNull
     private String email;
     @NonNull
-    private String adress;
+    private String address;
 }
